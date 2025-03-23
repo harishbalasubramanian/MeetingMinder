@@ -2,3 +2,4 @@ node_modules/
 venv/
 audio_files/
 uploads/
+.env

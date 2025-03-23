@@ -1,7 +1,7 @@
 from transformers import pipeline
 
 def summarize_text(text:str):
-    summarizer = pipeline('summarization', model='facebook/bart-large-cnn')
+    summarizer = pipeline('summarization', model='philschmid/bart-large-cnn-samsum')
     summary = summarizer(text, max_length=150,min_length=50,do_sample=False)
 
     return summary[0]['summary_text']
